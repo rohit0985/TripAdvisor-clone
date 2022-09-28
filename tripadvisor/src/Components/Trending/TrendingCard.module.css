@@ -1,0 +1,28 @@
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+.box{
+    border-radius: 15px;
+    padding: 0 20px 20px 20px;
+    background-color: #FAF1ED;
+   
+}
+.box:hover{
+    opacity: .8;
+}
+.box>div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+.box>div:nth-child(2)>div>img{
+border-radius: 50px;   
+width: 70%;
+}
+.box>div:nth-child(2) span{
+    font-weight: 500;
+    cursor: pointer;
+}
