@@ -28,6 +28,7 @@
 .copyWrite{
     padding-top: 0px;
     margin-top: 0px;
+    margin-bottom: 5px;
 }
 .copyWrite, .para{
     font-size: .9em;
@@ -45,12 +46,16 @@
     font-weight: 600;
 }
 .link:hover{
-    opacity: .7;
+    opacity: .8;
+}
+.para{
+    margin-top: 5px;
 }
 .para .more{
    color: black;
    text-decoration: none;
 font-weight: 500;
+
 }
 .para .more:hover{
     text-decoration:underline 

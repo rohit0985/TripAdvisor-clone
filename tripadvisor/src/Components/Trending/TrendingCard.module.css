@@ -12,7 +12,8 @@
    
 }
 .box:hover{
-    opacity: .8;
+    opacity: .9;
+    cursor: pointer;
 }
 .box>div:nth-child(2){
     display: flex;
@@ -25,4 +26,7 @@ width: 70%;
 .box>div:nth-child(2) span{
     font-weight: 500;
     cursor: pointer;
+}
+.box>div:nth-child(2) span:hover{
+    text-decoration: underline;
 }
