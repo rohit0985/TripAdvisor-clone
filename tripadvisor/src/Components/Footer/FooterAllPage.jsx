@@ -36,9 +36,18 @@ return(
     <div>
         <select>
         <option value="">Currency</option>
+        <option value="Rupee">Rupee</option>
+        <option value="Dollar">Dollar</option>
+        <option value="Euro">Euro</option>
+        <option value="Dinar">Dinar</option>
+        <option value="Pound">Pound</option>
         </select>
         <select>
         <option value="">Country</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="Germany">Germany</option>
+        <option value="UK">UK</option>
         </select>
     </div>
 </div>

@@ -3,10 +3,13 @@ import Trending from "../Components/Trending/Trending"
 import SqrCard from "../Components/Cards/SqrCard"
 import RectCard from "../Components/Cards/RectCard"
 import HotelCard from "../Components/Cards/HotelCard"
-
+import MoreToExplore from "../Components/MoreToExplore/MoreToExplore"
 
 const Home = () => {
     return (<>
+    <MoreToExplore/>
+    <br />
+        <br />
     <HotelCard/>
     <br />
         <br />

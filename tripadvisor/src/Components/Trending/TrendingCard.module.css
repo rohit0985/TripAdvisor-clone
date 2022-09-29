@@ -12,7 +12,7 @@
    
 }
 .box:hover{
-    opacity: .9;
+    opacity: .8;
     cursor: pointer;
 }
 .box>div:nth-child(2){

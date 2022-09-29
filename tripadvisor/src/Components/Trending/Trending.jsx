@@ -7,7 +7,7 @@ const Trending = ()=> {
 return(
     <div className={styles.Container}>
  {
-    trendingArr.map((el)=> <TrendingCard/>) 
+    trendingArr.map((el,i)=> <TrendingCard key={i}/>) 
  }
  </div> 
 )
