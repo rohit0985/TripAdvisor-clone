@@ -1,0 +1,65 @@
+.mainContainer {
+    background-color: #FAF1ED;
+    padding: 15px 0 10px 0;
+}
+
+.subContainer {
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    overflow: scroll;
+    gap: 20px;
+
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+}
+
+.box {
+    min-width: 29vw;
+    min-height: 100%;
+    background-color: white;
+}
+
+.box>div {
+    text-align: center;
+}
+
+.box>div>img {
+    width: 100%;
+}
+
+.box>div>img:hover {
+    opacity: .8;
+}
+
+.box>div+div {
+    padding: 20px;
+    line-height: 2em;
+}
+
+.box>div+div p {
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+}
+
+.box>div+div p>span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.box>div+div p+p {
+    font-size: 1.2em;
+    color: black;
+    font-weight: 600;
+}
+
+.box>div+div p+p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

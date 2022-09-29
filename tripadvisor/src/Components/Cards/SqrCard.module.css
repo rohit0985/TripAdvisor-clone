@@ -1,6 +1,6 @@
 .Box {
     width: 22vw;
-    line-height: 1e.5m;
+    line-height: 1em;
 }
 
 .Box>div {
@@ -29,7 +29,7 @@ p {
 }
 
 .Box:hover {
-    opacity: .9;
+    opacity: .8;
     cursor: pointer;
 }
 
