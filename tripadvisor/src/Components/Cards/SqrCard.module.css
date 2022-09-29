@@ -1,0 +1,38 @@
+.Box {
+    width: 22vw;
+    line-height: 1e.5m;
+}
+
+.Box>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Review {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.Review input {
+    border: 1px solid green;
+}
+
+.Box img {
+    width: 100%;
+}
+
+.Box h3,
+p {
+    margin: 0px 0px;
+}
+
+.Box:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+
+.Box h3:nth-child(1):hover {
+    text-decoration: underline;
+}
