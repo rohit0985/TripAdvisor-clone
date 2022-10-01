@@ -1,0 +1,24 @@
+.container{
+display: flex;
+width: 90%;
+margin: auto;
+justify-content: space-between;
+}
+
+.box{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   gap: 10px;
+}
+.box:hover{
+    color: white;
+    background-color: black;
+}
+
