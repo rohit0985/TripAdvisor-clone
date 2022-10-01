@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+.wraperCheckin{
+    /* border: 1px solid gray; */
+    width: 400px;
+    width: 400px;
+    background-color: red;
+ display: flex;
+ justify-content: end;
+}
+.wraperCheckout{
+    /* border: 1px solid gray; */
+    width: 400px;
+    background-color: green;
+ display: flex;
+ justify-content: end;
+}
+.wraperGuest{
+    /* border: 1px solid gray; */
+    width: 400px;
+    width: 400px;
+    background-color: gray;
+ display: flex;
+ justify-content: end;
+}
+.box{
+    border: 1px solid green;
+    width: 98%;
+  background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.box .details{
+    width: 100%;
+}
+.box input[type="date"], textarea{
+    outline: none;
+    border: none;
+}
+.box input[type="text"], textarea{
+    outline: none;
+    border: none;
+}
+
+.dropBox{
+    border: 1px solid black;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dropBox .row{
+    display: flex;
+    justify-content: space-between;
+}
+.dropBox .row>div{
+    display: flex;
+}
+.dropBox .row>div:first-child{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.dropBox .row>div:first-child>p{
+    font-weight: 500;
+}
+.dropBox>button{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}

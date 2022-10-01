@@ -8,6 +8,7 @@ import TopDestinations from "../Components/TopDestinations/TopDestinations"
 import NavbarTop from "../Components/Navbar/NavbarTop"
 import NavbarDetail from "../Components/Navbar/NavbarDetail"
 import Search from "../Components/Search"
+import {HotelBookingCheckin,HotelBookingCheckout,HotelBookingGuests,HotelBookingGuestsDrop} from "../Components/HotelBook/HotelBookingInput"
 
 
 const Home = () => {
@@ -20,6 +21,16 @@ const Home = () => {
      <br />
      <br />
      <Search/>
+        <br />
+        <HotelBookingCheckin/>
+        <br />
+        <HotelBookingCheckout/>
+         <br />
+        <HotelBookingGuests/>
+         <br />
+        <HotelBookingGuestsDrop/>
+
+
         <br />
         <RectCard/>
         <br />
