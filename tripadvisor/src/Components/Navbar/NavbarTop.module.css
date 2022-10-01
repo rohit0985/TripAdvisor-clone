@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.container>div:nth-child(1){
+    width: 17%;
+   
+}
+.container>div:nth-child(2){
+    width: 83%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  
+}
+.container>div:nth-child(2)>div{
+   
+    border-radius: 25px;
+    padding: 7px 20px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.container>div:nth-child(2)>div:hover{
+    background-color: rgb(233, 233, 233);
+}
+.container>div:nth-child(2) button{
+ border: none;
+ outline: none;
+ background-color: black;
+}
+.container>div:nth-child(2)>div:last-child{
+    background-color: black;
+  font-size: 1.3em;
+ 
+  
+}
+.container>div:nth-child(2)>div:last-child:hover{
+    opacity: .8;
+}
+.container link{
+    text-decoration: none;
+    color: red;
+}
+.container>div>img{
+    width: 100%;
+}
