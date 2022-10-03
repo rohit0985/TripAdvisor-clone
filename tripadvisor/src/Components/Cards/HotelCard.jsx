@@ -1,17 +1,18 @@
 import styles from "./HotelCard.module.css";
 
-const HotelCard = () => {
+const HotelCard = ({el, idx,data}) => {
+    const {name, xPrice,price,vendorInner1, price1,vendorInner2,price2,vendorInner3,price3,taLnk, provider_logo, review,review_count, reviewer,reviewerProfile,cancelation, image} =el
     return (
         <div className={styles.box}>
             <div>
                 <img
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/23/e3/7f/81/exterior.jpg"
+                    src={image}
                     alt="error-hotel-img"
                 />
             </div>
 
             <div>
-                <h2>4. Ramada by Windham Lucknow</h2>
+                <h2>{idx}. {name}</h2>
 
                 <div className={styles.desc}>
                     <div>
@@ -21,16 +22,16 @@ const HotelCard = () => {
                                     src="https://static.tacdn.com/img2/branding/hotels/Agoda.png"
                                     alt="error-logo-img"
                                 />
-                                <h2 className={styles.price}>₹11,213</h2>
-                                <h2 className={styles.actPrice}>₹7,10</h2>
+                                <h2 className={styles.price}>{xPrice}</h2>
+                                <h2 className={styles.actPrice}>{price}</h2>
                                 <button>
                                     <p>View deal</p>
                                 </button>
                             </div>
                             <div className={styles.servises}>
-                                <p>Free Cancellation</p>
+                                <p>{cancelation}</p>
                                 <p>
-                                    <span>tick</span>Reserve now, Pay at stay
+                                    <span></span>Reserve now, Pay at stay
                                 </p>
                             </div>
                         </div>
@@ -38,20 +39,20 @@ const HotelCard = () => {
                         <div className={styles.booking}>
                             <div>
                                 <div>
-                                    <a href="#">Booking.com</a>
-                                    <p>₹7,10</p>
+                                    <a href="#">{vendorInner1}</a>
+                                    <p>{price1}</p>
                                 </div>
                                 <div>
-                                    <a href="#">Booking.com</a>
-                                    <p>₹7,10</p>
+                                    <a href="#">{vendorInner2}</a>
+                                    <p>{price2}</p>
                                 </div>
                                 <div>
-                                    <a href="#">Booking.com</a>
-                                    <p>₹7,10</p>
+                                    <a href="#">{vendorInner3}</a>
+                                    <p>{price3}</p>
                                 </div>
                             </div>
                             <div>
-                                <p>View all 9 deals from ₹7,10</p>
+                                <p>{taLnk}</p>
                             </div>
                         </div>
                     </div>
@@ -59,19 +60,20 @@ const HotelCard = () => {
                     <div className={styles.review}>
                         <div>
                             <div className={styles.reviewCount}>
+                            <div style={{ display: "flex", gap: "5px" }}>
+                        {
+                            new Array(3).fill().map((el, i) => <div key={i} style={{ width: "10px", height: '10px', borderRadius: '50%', background: "green" }}></div>)
+                        }
+                        {
+                            new Array(5 - 3).fill().map((el, i) => <div key={i} style={{ width: "10px", height: '10px', borderRadius: '50%', background: "gray" }}></div>)
+                        }
+                    </div>
                                 <div>
-                                    <input type="radio" />
-                                    <input type="radio" />
-                                    <input type="radio" />
-                                    <input type="radio" />
-                                    <input type="radio" />
-                                </div>
-                                <div>
-                                    <p>1,134 reviews</p>
+                                    <p>{review_count}</p>
                                 </div>
                             </div>
                             <div>
-                                <p>#4 Best Value of 1,473 places to stay in Lucknow</p>
+                                <p>#{idx} Best Value of {data.length} places to stay in Lucknow</p>
                             </div>
 
                             <div>
@@ -81,16 +83,11 @@ const HotelCard = () => {
                                         alt="error"
                                     />
                                     <p>
-                                        By <span>Yorenlevi</span>
+                                        By <span>{reviewer}</span>
                                     </p>
                                 </div>
                                 <div>
-                                    <p>
-                                        {" "}
-                                        "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                        Veniam, soluta. Lorem ipsum dolor sit, amet consectetur
-                                        adipisicing elit. Veniam, soluta."{" "}
-                                    </p>
+                                    <p>{review}</p>
                                 </div>
                             </div>
                         </div>

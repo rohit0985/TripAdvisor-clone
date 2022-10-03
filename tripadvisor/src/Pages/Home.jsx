@@ -8,51 +8,55 @@ import TopDestinations from "../Components/TopDestinations/TopDestinations"
 import NavbarTop from "../Components/Navbar/NavbarTop"
 import NavbarDetail from "../Components/Navbar/NavbarDetail"
 import Search from "../Components/Search"
+import ThingsToDo from "../Components/ThingsToDo/ThingsToDo"
 import {HotelBookingCheckin,HotelBookingCheckout,HotelBookingGuests,HotelBookingGuestsDrop} from "../Components/HotelBook/HotelBookingInput"
+import img1 from "../Components/tripadvisor.png"
 
+import React, {useEffect} from 'react'
+import axios from "axios"
+import { useState } from "react"
+
+
+
+let search="lucknow"
 
 const Home = () => {
-    return (<>
-   
-    <NavbarTop/>
-    <br />
-    <br />
-     <NavbarDetail/>
-     <br />
-     <br />
-     <Search/>
-        <br />
-        <HotelBookingCheckin/>
-        <br />
-        <HotelBookingCheckout/>
-         <br />
-        <HotelBookingGuests/>
-         <br />
-        <HotelBookingGuestsDrop/>
+const [data, setData] = useState([])
+
+useEffect(()=>{
+    axios.get(`https://my-jsih.herokuapp.com/destinations`)
+    .then((res)=> setData(res.data[search]))
+},[])
 
 
-        <br />
-        <RectCard/>
-        <br />
-    <TopDestinations/>
-    <br />
-        <br />
-    <MoreToExplore/>
-    <br />
-        <br />
-    <HotelCard/>
-    <br />
-        <br />
-   
-    <br />
-        <br />
-    <SqrCard/>
-    <br />
-        <br />
-        <Trending />
-        <br />
-        <br />
-        <FooterAllPage />
-    </>)
+
+
+
+
+
+
+
+
+    return (<div>
+<NavbarTop/>
+<br />
+<br />
+<NavbarDetail/>
+<br />
+<Search/>
+<br />
+<ThingsToDo data={data}/>
+<br />
+<MoreToExplore/>
+<br />
+<TopDestinations/>
+<br />
+<Trending/>
+<br />
+<br />
+<img src={img1} style={{ width:"100vw"}}/>
+<br />
+<FooterAllPage/>
+    </div>)
 }
 export default Home

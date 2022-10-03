@@ -6,7 +6,7 @@ const NavbarTop = () => {
   return (
     <div className={styles.container}>
       <div>
-        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="error" />
+        <Link to="/"><img   src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="error" /></Link>
       </div>
 
 

@@ -1,10 +1,12 @@
 .box {
-    width: 100vw;
+   
     display: grid;
     grid-template-columns: 30% 70%;
-    width: 80%;
+   height: 300px;
 }
-
+.box p{
+    font-size: .8em;
+}
 .box:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -129,6 +131,8 @@
 
 .review .reviewCount {
     display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .review .reviewCount:hover {

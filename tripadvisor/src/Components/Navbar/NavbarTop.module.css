@@ -4,6 +4,8 @@
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    position: static;
+    top: 0px;
 }
 .container>div:nth-child(1){
     width: 17%;
@@ -44,6 +46,6 @@
     text-decoration: none;
     color: red;
 }
-.container>div>img{
+.container>div img{
     width: 100%;
 }
