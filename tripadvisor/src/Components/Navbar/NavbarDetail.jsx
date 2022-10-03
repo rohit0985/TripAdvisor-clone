@@ -8,22 +8,27 @@ import {MdOutlineLocalActivity,MdHolidayVillage,MdOutlineForum} from "react-icon
 let data = [
     {
         title:"Hotels",
+        path: "/hotel",
         icon: <BiBed/>
     },
     {
         title:"Things to Do",
+        path: "#",
         icon: <MdOutlineLocalActivity/>
     },
     {
         title:"Holiday Homes",
+        path: "#",
         icon: <MdHolidayVillage/>
     },
     {
         title:"Restaurents",
+        path: "#",
         icon: <BiRestaurant/>
     },
     {
         title:"Travel Forum",
+        path: "#",
         icon: <MdOutlineForum/>
     },
 ]

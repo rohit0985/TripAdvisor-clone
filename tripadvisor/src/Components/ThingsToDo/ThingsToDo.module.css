@@ -1,0 +1,21 @@
+.outer {
+    width: 90%;
+    margin: auto;
+}
+.outer>p {
+    margin: -15px 0 10px 0;
+}
+.container {
+    display: flex;
+    gap: 23px;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.container .box{
+    min-width: 23%;
+}
