@@ -38,7 +38,7 @@ const NavbarDetail = () => {
     <div className={styles.container}>
       {
         data.filter((el,i)=> i<data.length).map((el)=> <NavbarDetailCard {...el}/>)
-      }<NavbarDetailCard title="More"/>
+      }<NavbarDetailCard path="/cart" title="Cart"/>
     </div>
   )
 }

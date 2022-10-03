@@ -1,7 +1,14 @@
 import styles from "./HotelCard.module.css";
+import {cartContext} from "../../Context/CartContext/CartContext";
+import { useContext } from "react";
 
 const HotelCard = ({el, idx,data}) => {
-    const {name, xPrice,price,vendorInner1, price1,vendorInner2,price2,vendorInner3,price3,taLnk, provider_logo, review,review_count, reviewer,reviewerProfile,cancelation, image} =el
+    const {name, xPrice,price,vendorInner1, price1,vendorInner2,price2,vendorInner3,price3,taLnk, provider_logo, review,review_count, reviewer,reviewerProfile,cancelation, image} =el;
+
+    
+   const {cart, setCart} = useContext(cartContext)
+
+    console.log(cart)
     return (
         <div className={styles.box}>
             <div>
@@ -24,7 +31,7 @@ const HotelCard = ({el, idx,data}) => {
                                 />
                                 <h2 className={styles.price}>{xPrice}</h2>
                                 <h2 className={styles.actPrice}>{price}</h2>
-                                <button>
+                                <button onClick={()=>setCart([...cart, el])}>
                                     <p>View deal</p>
                                 </button>
                             </div>

@@ -1,0 +1,17 @@
+.container{
+    border: 1px solid gray;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+ padding: 5px 5px 25px 5px;
+ border-radius: 10px;
+}
+.form{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+button{
+    margin-bottom: 5px;
+}

@@ -19,7 +19,7 @@ useEffect(()=>{
     axios.get(`https://my-jsih.herokuapp.com/destinations`)
     .then((res)=>{
         if(filter){
-            setData(res.data[search].hotels.filter((el)=> el.bed_ize.includes(filter)))
+            setData(res.data[search].hotels.filter((el)=> el.bed_size.includes(filter)))
         }
         setData(res.data[search].hotels)
     })

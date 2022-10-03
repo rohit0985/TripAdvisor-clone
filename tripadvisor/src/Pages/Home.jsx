@@ -11,10 +11,12 @@ import Search from "../Components/Search"
 import ThingsToDo from "../Components/ThingsToDo/ThingsToDo"
 import {HotelBookingCheckin,HotelBookingCheckout,HotelBookingGuests,HotelBookingGuestsDrop} from "../Components/HotelBook/HotelBookingInput"
 import img1 from "../Components/tripadvisor.png"
+import {AuthContext} from "../Context/AuthContext/AuthContext"
 
-import React, {useEffect} from 'react'
+import React, {useEffect, useContext} from 'react'
 import axios from "axios"
 import { useState } from "react"
+import {SearchContext} from "../Context/SearchContext/SearchContext"
 
 
 
@@ -22,6 +24,9 @@ let search="lucknow"
 
 const Home = () => {
 const [data, setData] = useState([])
+const {token, setToken}= useContext(AuthContext)
+
+console.log(token, setToken)
 
 useEffect(()=>{
     axios.get(`https://my-jsih.herokuapp.com/destinations`)
